@@ -33,7 +33,6 @@ public class unoAct extends AppCompatActivity {
         ingresarbtn = (Button) findViewById(R.id.btn_ingresarAlumno);
         reg = (EditText) findViewById(R.id.etxt_liUsuarioAlumn);
         contt = (EditText) findViewById(R.id.etxt_liContraseñaAlumn);
-        prueba = (TextView) findViewById(R.id.txtV_pruebaAlumno);
 
         ingresarbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +54,9 @@ public class unoAct extends AppCompatActivity {
                                                 case "OK":
                                                     startActivity(iniciarAlumno);
                                                     break;
+                                                case "NO":
+                                                    Toast.makeText(unoAct.this,"Alumno no existe",Toast.LENGTH_SHORT).show();
+                                                break;
                                             }
 
 
@@ -68,7 +70,7 @@ public class unoAct extends AppCompatActivity {
                             @Override
                             public void onErrorResponse(VolleyError error)
                             {
-                                prueba.setText("No OK");
+                                Toast.makeText(unoAct.this,"Error php",Toast.LENGTH_SHORT).show();
                             }
                         });
                 RequestQueue x = Volley.newRequestQueue(unoAct.this);

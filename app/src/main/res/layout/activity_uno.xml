@@ -25,12 +25,6 @@
         android:drawablePadding="5dp"
         android:layout_marginTop="50dp"
         android:layout_below="@+id/imgV_logo"/>
-    <TextView
-        android:id="@+id/txtV_pruebaAlumno"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Prueba"
-        android:textSize="40dp"/>
 
     <EditText
         android:id="@+id/etxt_liContraseñaAlumn"
