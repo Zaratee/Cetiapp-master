@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoalumno">
+    <TextView
+        android:id="@+id/txtV_Tareas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tareas"
+        android:layout_centerHorizontal="true"
+        android:textSize="45dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/etxt_tarea"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:hint="Escribir tarea"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtV_Tareas"/>
+    <ListView
+        android:id="@+id/lstV_tareas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_mandarTarea"
+        android:background="@drawable/buton_round"
+        android:layout_marginTop="20dp">
+    </ListView>
+    <Button
+        android:id="@+id/btn_mandarTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar tarea"
+        android:layout_below="@+id/etxt_tarea"
+        android:background="@drawable/buton_round"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

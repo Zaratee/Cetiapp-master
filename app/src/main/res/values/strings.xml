@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+    <string name="Nombre">Carlos Zarate Monrroy</string>
+    <string name="Grupo">I2</string>
+    <string name="Semestre">6</string>
+    <string name="Carrera"> Tecnólogo en Desarrollo de Software</string>
+    <string name="Registro">14100581</string>
+
+    <string-array name="carreras">
+        <item> Carrera</item>
+        <item>Tecnólogo en Químico en Fármacos</item>
+        <item>Tecnólogo en Electromecánica</item>
+        <item>Tecnólogo en Mecánica automotriz</item>
+        <item>Tecnólogo en Máquinas - Herramienta</item>
+        <item>Tecnólogo en Control automático </item>
+        <item>Tecnólogo en Construcción</item>
+        <item>Tecnólogo en Electrónica</item>
+        <item>Tecnólogo en Desarrollo de Software</item>
+    </string-array>
+
+    <string-array name="semestre">
+        <item>Semestre</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="grupo">
+        <item>Grupo</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+    </string-array>
+    <string name="title_activity_alumno1">Alumno1Act</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_alumno1st">alumno1stAct</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_docente1st">docente1stAct</string>
+
+</resources>

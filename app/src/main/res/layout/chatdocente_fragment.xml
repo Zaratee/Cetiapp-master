@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFDFDF">
+
+    <ImageView
+        android:id="@+id/imgV_barrachatDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:background="@drawable/barrachat"/>
+    <Button
+        android:id="@+id/btn_volverChatDocente"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/backi"
+        android:layout_marginStart="8dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgV_imagenChatAbiertoDocente"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/chatdentro"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/txtV_NombreChatDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Semestre"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="115dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:id="@+id/txtV_NombreChatpt2Docente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Grupo"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="125dp"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        />
+    <TextView
+        android:id="@+id/txtV_enlineDocentea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="En Linea"
+        android:layout_marginLeft="115dp"
+        android:layout_below="@id/txtV_NombreChatDocente"
+        android:textColor="#fff"
+        android:textStyle="italic" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondochat"
+        android:layout_below="@+id/imgV_barrachatDocente"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#DFDFDF"
+        />
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="380dp"
+        android:background="@drawable/chattessto"
+        android:layout_below="@+id/imgV_barrachatDocente"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_round"
+        android:hint="  Escribe un mensaje aqui"
+        android:drawableLeft="@drawable/emoj"
+        android:inputType="text"/>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crearAlumnoAct"
+    android:background="@drawable/fondoadmini">
+    <Spinner
+        android:id="@+id/spin_Carrera"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etxt_contraseñaCrearAlumno"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/etxt_contraseñaCrearAlumno"
+        android:background="@drawable/edittext_form">
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/spin_Semestre"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_Carrera"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/spin_Carrera"
+        android:background="@drawable/edittext_form">
+    </Spinner>
+
+     <Spinner
+         android:id="@+id/spin_Grupo"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/spin_Carrera"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="15dp"
+         android:layout_alignRight="@+id/spin_Carrera"
+         android:background="@drawable/edittext_form">
+     </Spinner>
+
+    <TextView
+        android:id="@+id/txtV_CrearAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear Alumno"
+        android:layout_centerHorizontal="true"
+        android:textSize="45dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#002db3"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@drawable/back_list"/>
+    <EditText
+        android:id="@+id/etxt_nombreCrearAlumno"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/txtV_CrearAlumno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="Nombre"
+        />
+    <EditText
+        android:id="@+id/etxt_apellidoCrearAlumno"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/etxt_nombreCrearAlumno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Apellido"/>
+
+    <EditText
+        android:id="@+id/etxt_registroCrearAlumno"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/etxt_apellidoCrearAlumno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Registro"/>
+
+    <EditText
+        android:id="@+id/etxt_contraseñaCrearAlumno"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/etxt_registroCrearAlumno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Contraseña"/>
+
+
+    <Button
+        android:id="@+id/btn_adminCrearAlumno"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spin_Semestre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Crear"
+        android:background="@drawable/buton_round"/>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoalumno">
+
+    <TextView
+        android:id="@+id/letreroChatsDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:layout_centerHorizontal="true"
+        android:textSize="45dp"
+        android:layout_marginTop="30dp"/>
+
+
+    <TextView
+        android:id="@+id/txtV_btnIngresarChatDocente"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/letreroChatsDocente"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buton_round"/>
+    <TextView
+        android:id="@+id/txtV_btnChatDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@+id/letreroChatsDocente"
+        android:layout_toEndOf="@+id/imgV_Chatimagen1stActDocente"
+        android:text="@string/Semestre"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/txtV_btnChatpt2Docente"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@+id/letreroChatsDocente"
+        android:layout_toEndOf="@+id/txtV_btnChatDocente"
+        android:layout_marginLeft="10dp"
+        android:text="@string/Grupo"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imgV_Chatimagen1stActDocente"
+        android:layout_width="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/letreroChatsDocente"
+        android:background="@drawable/chatdentro" />
+</RelativeLayout>

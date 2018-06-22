@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crearDocenteAct"
+    android:background="@drawable/fondoadmini">
+
+    <Spinner
+        android:id="@+id/spin_carreraCrearDocente"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etxt_contraseñaCrearDocente"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_form">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/txtV_CrearDocente"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Crear Docente"
+        android:layout_centerHorizontal="true"
+        android:textSize="45dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#002db3"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@drawable/back_list"/>
+    <EditText
+        android:id="@+id/etxt_nombreCrearDocente"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/txtV_CrearDocente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="Nombre"
+        />
+    <EditText
+        android:id="@+id/etxt_apellidoCrearDocente"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/etxt_nombreCrearDocente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Apellido"/>
+
+    <EditText
+        android:id="@+id/etxt_nominaCrearDocente"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/etxt_apellidoCrearDocente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Nomina"/>
+
+    <EditText
+        android:id="@+id/etxt_contraseñaCrearDocente"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/etxt_nominaCrearDocente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Contraseña"/>
+
+    <Button
+        android:id="@+id/btn_adminCrearDocente"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spin_carreraCrearDocente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Crear"
+        android:background="@drawable/edit_round"/>
+
+</RelativeLayout>

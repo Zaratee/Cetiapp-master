@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actualizarDocenteAct"
+    android:background="@drawable/fondoadmini">
+
+    <TextView
+        android:id="@+id/txtV_ActualizarDocente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Docente"
+        android:layout_centerHorizontal="true"
+        android:textSize="45dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#002db3"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@drawable/back_list"/>
+    <EditText
+        android:id="@+id/etxt_nominaActualizarDocente"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/txtV_ActualizarDocente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:hint="Nomina"/>
+    <EditText
+        android:id="@+id/etxt_contraseñaActualizarDocente"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/etxt_nominaActualizarDocente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Contraseña"/>
+    <Spinner
+        android:id="@+id/spin_carreraActualizarDocente"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etxt_contraseñaActualizarDocente"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_form">
+    </Spinner>
+
+    <Button
+        android:id="@+id/btn_ActualizarDocenteAct"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spin_carreraActualizarDocente"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Actualizar"
+        android:background="@drawable/buton_round"/>
+
+</RelativeLayout>
