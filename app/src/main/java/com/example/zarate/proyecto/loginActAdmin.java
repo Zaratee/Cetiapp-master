@@ -17,8 +17,7 @@ public class loginActAdmin extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent login = new Intent(loginActAdmin.this,Admin1Act.class);
-                startActivity(login);
+
             }
         });
     }
