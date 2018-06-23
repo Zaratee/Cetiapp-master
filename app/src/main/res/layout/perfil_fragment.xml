@@ -47,6 +47,22 @@
         android:layout_below="@+id/txtV_nombrePerfil"
         android:layout_toRightOf="@+id/imgV_FotoPerfil"/>
     <TextView
+        android:id="@+id/txtV_apellidoPPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ApellidoP"
+        android:layout_below="@+id/txtV_nombrePerfil"
+        android:layout_toRightOf="@+id/txtV_nombreAlummnoPerfil"
+        android:layout_marginLeft="8dp"/>
+    <TextView
+        android:id="@+id/txtV_apellidoMPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ApellidoM"
+        android:layout_below="@+id/txtV_nombrePerfil"
+        android:layout_toRightOf="@+id/txtV_apellidoPPerfil"
+        android:layout_marginLeft="8dp"/>
+    <TextView
         android:id="@+id/txtV_registroPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

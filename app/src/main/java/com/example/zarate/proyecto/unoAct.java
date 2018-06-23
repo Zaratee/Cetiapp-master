@@ -24,7 +24,6 @@ public class unoAct extends AppCompatActivity {
 
     Button ingresarbtn;
     EditText reg,contt;
-    TextView prueba;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +36,8 @@ public class unoAct extends AppCompatActivity {
         ingresarbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://192.168.1.66:8081/appceti/LoginAlumno.php?usu="+ reg.getText().toString()+"&cont="+contt.getText().toString();
-                final Intent iniciarAlumno = new Intent(unoAct.this,alumno1stAct.class);
+                String url = "http://192.168.1.66:8081/chat/loginalumno.php?usu="+ reg.getText().toString()+"&cont="+contt.getText().toString();
+                final Intent iniciarDocente = new Intent(unoAct.this,alumno1stAct.class);
                 JsonObjectRequest peticion = new JsonObjectRequest
                         (
                                 Request.Method.GET,
@@ -49,16 +48,25 @@ public class unoAct extends AppCompatActivity {
                                     public void onResponse(JSONObject response) {
                                         try {
                                             String valor = response.getString("Estado");
-                                            prueba.setText(valor);
                                             switch(valor) {
+
                                                 case "OK":
-                                                    startActivity(iniciarAlumno);
+                                                    String nombre =response.getString("nom");
+                                                    String apellidoM =response.getString("apellim");
+                                                    String apellidoP =response.getString("apellip");
+                                                    String registro =response.getString("reg");
+                                                    String carrera =response.getString("carr");
+                                                    iniciarDocente.putExtra("NOMBRE",nombre);
+                                                    iniciarDocente.putExtra("APEM",apellidoM);
+                                                    iniciarDocente.putExtra("APEP",apellidoP);
+                                                    iniciarDocente.putExtra("REG",registro);
+                                                    iniciarDocente.putExtra("NOMBRE",carrera);
+                                                    startActivity(iniciarDocente);
                                                     break;
                                                 case "NO":
                                                     Toast.makeText(unoAct.this,"Alumno no existe",Toast.LENGTH_SHORT).show();
-                                                break;
+                                                    break;
                                             }
-
 
                                         } catch (JSONException e) {
                                             e.printStackTrace();
@@ -76,6 +84,7 @@ public class unoAct extends AppCompatActivity {
                 RequestQueue x = Volley.newRequestQueue(unoAct.this);
                 x.add(peticion);
             }
+
         });
     }
 

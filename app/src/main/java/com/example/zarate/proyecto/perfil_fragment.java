@@ -1,6 +1,7 @@
 package com.example.zarate.proyecto;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,10 +15,12 @@ public class perfil_fragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.perfil_fragment,container,false);
-
         Typeface font = Typeface.createFromAsset(getActivity().getAssets(),"fuentes/quantify.ttf");
         TextView Grupo = (TextView) v.findViewById(R.id.txtV_Perfil);
         Grupo.setTypeface(font);
+        TextView nom,apellidom,apellidop,reg,carr,sem,grup;
+
+
         return v;
     }
 }

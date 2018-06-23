@@ -39,7 +39,7 @@ public class loginActDocent extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://192.168.1.66:8081/appceti/logindocente.php?usu="+ nom.getText().toString()+"&cont="+contr.getText().toString();
+                String url = "http://192.168.1.66:8081/chat/logindocente.php?usu="+ nom.getText().toString()+"&cont="+contr.getText().toString();
                 final Intent iniciarDocente = new Intent(loginActDocent.this,docente1stAct.class);
                 JsonObjectRequest peticion = new JsonObjectRequest
                         (

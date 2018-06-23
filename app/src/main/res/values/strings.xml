@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Proyecto</string>
-    <string name="Nombre">Carlos Zarate Monrroy</string>
+    <string name="Nombre">Carlos</string>
+    <string name="ApellidoP">Zarate</string>
+    <string name="ApellidoM">Monroy</string>
     <string name="Grupo">I2</string>
     <string name="Semestre">6</string>
     <string name="Carrera"> Tecnólogo en Desarrollo de Software</string>

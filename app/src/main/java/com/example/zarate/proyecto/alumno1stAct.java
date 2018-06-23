@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 public class alumno1stAct extends AppCompatActivity
@@ -48,8 +49,21 @@ public class alumno1stAct extends AppCompatActivity
         android.app.FragmentManager frgman= getFragmentManager();
         android.app.FragmentTransaction frgtran = frgman.beginTransaction();
         frgman.beginTransaction().replace(R.id.Fragment_conteiner,new perfil_fragment()).commit();
+      /*
+        TextView nom,apellidom,apellidop,reg,carr,sem,grup;
 
-
+        nom = (TextView) findViewById(R.id.txtV_nombreAlummnoPerfil);
+        apellidom = (TextView) findViewById(R.id.txtV_apellidoMPerfil);
+        apellidop = (TextView) findViewById(R.id.txtV_apellidoPPerfil);
+        reg = (TextView) findViewById(R.id.txtV_registroAlummnoPerfil);
+        carr = (TextView) findViewById(R.id.txtV_carreraAlummnoPerfil);
+        sem = (TextView) findViewById(R.id.txtV_semestreAlummnoPerfil);
+        grup = (TextView) findViewById(R.id.txtV_GrupoAlummnoPerfil);
+        nom.setText(getIntent().getStringExtra("NOMBRE"));
+        apellidom.setText(getIntent().getStringExtra("APEM"));
+        apellidop.setText(getIntent().getStringExtra("APEP"));
+        reg.setText(getIntent().getStringExtra("REG"));
+*/
     }
 
     @Override

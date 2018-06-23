@@ -31,7 +31,7 @@ public class loginActAdmin extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "http://192.168.1.66:8081/appceti/loginadmin.php?usu="+ usu.getText().toString()+"&cont="+contr.getText().toString();
+                String url = "http://192.168.1.66:8081/chat/loginadmin.php?usu="+ usu.getText().toString()+"&cont="+contr.getText().toString();
                 final Intent iniciarAdmin = new Intent(loginActAdmin.this,Admin1Act.class);
                 JsonObjectRequest peticion = new JsonObjectRequest
                         (
