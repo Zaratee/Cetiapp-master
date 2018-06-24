@@ -20,7 +20,7 @@ import android.widget.TextView;
 public class alumno1stAct extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
 
-
+    TextView Nombr,ApellM,ApellP;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +37,7 @@ public class alumno1stAct extends AppCompatActivity
             }
         });
 
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -49,21 +50,9 @@ public class alumno1stAct extends AppCompatActivity
         android.app.FragmentManager frgman= getFragmentManager();
         android.app.FragmentTransaction frgtran = frgman.beginTransaction();
         frgman.beginTransaction().replace(R.id.Fragment_conteiner,new perfil_fragment()).commit();
-      /*
-        TextView nom,apellidom,apellidop,reg,carr,sem,grup;
 
-        nom = (TextView) findViewById(R.id.txtV_nombreAlummnoPerfil);
-        apellidom = (TextView) findViewById(R.id.txtV_apellidoMPerfil);
-        apellidop = (TextView) findViewById(R.id.txtV_apellidoPPerfil);
-        reg = (TextView) findViewById(R.id.txtV_registroAlummnoPerfil);
-        carr = (TextView) findViewById(R.id.txtV_carreraAlummnoPerfil);
-        sem = (TextView) findViewById(R.id.txtV_semestreAlummnoPerfil);
-        grup = (TextView) findViewById(R.id.txtV_GrupoAlummnoPerfil);
-        nom.setText(getIntent().getStringExtra("NOMBRE"));
-        apellidom.setText(getIntent().getStringExtra("APEM"));
-        apellidop.setText(getIntent().getStringExtra("APEP"));
-        reg.setText(getIntent().getStringExtra("REG"));
-*/
+
+
     }
 
     @Override
@@ -78,6 +67,13 @@ public class alumno1stAct extends AppCompatActivity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        Nombr = (TextView) findViewById(R.id.txtV_alumnoNombreMenu);
+        ApellM = (TextView) findViewById(R.id.txtV_alumnoApellidoPaMenu);
+        ApellP = (TextView) findViewById(R.id.txtV_alumnoApellidoMaMenu) ;
+
+        Nombr.setText(unoAct.Nombre);
+        ApellM.setText(unoAct.ApelliM);
+        ApellP.setText(unoAct.ApelliP);
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.alumno1st, menu);
         return true;
@@ -85,6 +81,7 @@ public class alumno1stAct extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.

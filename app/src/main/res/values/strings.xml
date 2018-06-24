@@ -10,13 +10,6 @@
 
     <string-array name="carreras">
         <item> Carrera</item>
-        <item>Tecnólogo en Químico en Fármacos</item>
-        <item>Tecnólogo en Electromecánica</item>
-        <item>Tecnólogo en Mecánica automotriz</item>
-        <item>Tecnólogo en Máquinas - Herramienta</item>
-        <item>Tecnólogo en Control automático </item>
-        <item>Tecnólogo en Construcción</item>
-        <item>Tecnólogo en Electrónica</item>
         <item>Tecnólogo en Desarrollo de Software</item>
     </string-array>
 

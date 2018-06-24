@@ -18,27 +18,7 @@
         android:background="@drawable/edittext_form">
     </Spinner>
 
-    <Spinner
-        android:id="@+id/spin_Semestre"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spin_Carrera"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:layout_alignLeft="@+id/spin_Carrera"
-        android:background="@drawable/edittext_form">
-    </Spinner>
 
-     <Spinner
-         android:id="@+id/spin_Grupo"
-         android:layout_width="150dp"
-         android:layout_height="wrap_content"
-         android:layout_below="@+id/spin_Carrera"
-         android:layout_centerHorizontal="true"
-         android:layout_marginTop="15dp"
-         android:layout_alignRight="@+id/spin_Carrera"
-         android:background="@drawable/edittext_form">
-     </Spinner>
 
     <TextView
         android:id="@+id/txtV_CrearAlumno"
@@ -66,15 +46,25 @@
         android:hint="Nombre"
         />
     <EditText
-        android:id="@+id/etxt_apellidoCrearAlumno"
-        android:layout_width="300dp"
+        android:id="@+id/etxt_apellidoPCrearAlumno"
+        android:layout_width="150dp"
         android:layout_height="35dp"
         android:background="@drawable/edittext_form"
         android:paddingLeft="10dp"
         android:layout_below="@+id/etxt_nombreCrearAlumno"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:hint="Apellido"/>
+        android:layout_alignLeft="@+id/etxt_nombreCrearAlumno"
+        android:hint="Apellido P"/>
+    <EditText
+        android:id="@+id/etxt_apellidoMCrearAlumno"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/etxt_nombreCrearAlumno"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/etxt_nombreCrearAlumno"
+        android:hint="Apellido M"/>
 
     <EditText
         android:id="@+id/etxt_registroCrearAlumno"
@@ -82,7 +72,7 @@
         android:layout_height="35dp"
         android:background="@drawable/edittext_form"
         android:paddingLeft="10dp"
-        android:layout_below="@+id/etxt_apellidoCrearAlumno"
+        android:layout_below="@+id/etxt_apellidoPCrearAlumno"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:hint="Registro"/>
@@ -103,7 +93,7 @@
         android:id="@+id/btn_adminCrearAlumno"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/spin_Semestre"
+        android:layout_below="@id/spin_Carrera"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="Crear"

@@ -31,6 +31,8 @@ public class eliminarAlumnAct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_eliminar_alumn);
 
+        Toast.makeText(eliminarAlumnAct.this,"RELLENAR TODOS LOS CAMPOS",Toast.LENGTH_LONG).show();
+
         String fuente = "fuentes/quantify.ttf";
         this.quan = Typeface.createFromAsset(getAssets(),fuente);
         modDatos = (TextView) findViewById(R.id.txtV_EliminarAlumno);

@@ -24,6 +24,11 @@ public class unoAct extends AppCompatActivity {
 
     Button ingresarbtn;
     EditText reg,contt;
+    TextView uno,dos,tres,cuatro;
+    public static String Nombre = "Caros";
+    public static String ApelliM = "Caro";
+    public static String ApelliP = "Cargos";
+    public static String Regis = "Caroffs";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +37,11 @@ public class unoAct extends AppCompatActivity {
         ingresarbtn = (Button) findViewById(R.id.btn_ingresarAlumno);
         reg = (EditText) findViewById(R.id.etxt_liUsuarioAlumn);
         contt = (EditText) findViewById(R.id.etxt_liContraseñaAlumn);
+
+        uno = (TextView) findViewById(R.id.txtV_uno);
+        dos = (TextView) findViewById(R.id.txtV_dos);
+        tres = (TextView) findViewById(R.id.txtV_tres);
+        cuatro = (TextView) findViewById(R.id.txtV_cuatro);
 
         ingresarbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,19 +58,17 @@ public class unoAct extends AppCompatActivity {
                                     public void onResponse(JSONObject response) {
                                         try {
                                             String valor = response.getString("Estado");
+                                            String act = "UNO";
                                             switch(valor) {
 
                                                 case "OK":
-                                                    String nombre =response.getString("nom");
-                                                    String apellidoM =response.getString("apellim");
-                                                    String apellidoP =response.getString("apellip");
-                                                    String registro =response.getString("reg");
-                                                    String carrera =response.getString("carr");
-                                                    iniciarDocente.putExtra("NOMBRE",nombre);
-                                                    iniciarDocente.putExtra("APEM",apellidoM);
-                                                    iniciarDocente.putExtra("APEP",apellidoP);
-                                                    iniciarDocente.putExtra("REG",registro);
-                                                    iniciarDocente.putExtra("NOMBRE",carrera);
+
+                                                    Nombre= response.getString("nom");
+                                                    ApelliM = response.getString("apellim");
+                                                    ApelliP = response.getString("apellip");
+                                                    Regis = response.getString("reg");
+                                                    MainActivity.ACT = act;
+
                                                     startActivity(iniciarDocente);
                                                     break;
                                                 case "NO":

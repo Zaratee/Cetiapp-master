@@ -8,15 +8,6 @@
     tools:context=".crearDocenteAct"
     android:background="@drawable/fondoadmini">
 
-    <Spinner
-        android:id="@+id/spin_carreraCrearDocente"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/etxt_contraseñaCrearDocente"
-        android:layout_marginTop="20dp"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edittext_form">
-    </Spinner>
 
     <TextView
         android:id="@+id/txtV_CrearDocente"
@@ -43,15 +34,25 @@
         android:hint="Nombre"
         />
     <EditText
-        android:id="@+id/etxt_apellidoCrearDocente"
-        android:layout_width="300dp"
+        android:id="@+id/etxt_apellidoPCrearDocente"
+        android:layout_width="150dp"
         android:layout_height="35dp"
         android:background="@drawable/edittext_form"
         android:paddingLeft="10dp"
         android:layout_below="@+id/etxt_nombreCrearDocente"
-        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/etxt_nombreCrearDocente"
         android:layout_marginTop="15dp"
-        android:hint="Apellido"/>
+        android:hint="Apellido P."/>
+    <EditText
+        android:id="@+id/etxt_apellidoMCrearDocente"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext_form"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/etxt_nombreCrearDocente"
+        android:layout_alignRight="@+id/etxt_nombreCrearDocente"
+        android:layout_marginTop="15dp"
+        android:hint="Apellido M."/>
 
     <EditText
         android:id="@+id/etxt_nominaCrearDocente"
@@ -59,7 +60,7 @@
         android:layout_height="35dp"
         android:background="@drawable/edittext_form"
         android:paddingLeft="10dp"
-        android:layout_below="@+id/etxt_apellidoCrearDocente"
+        android:layout_below="@+id/etxt_apellidoPCrearDocente"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:hint="Nomina"/>
@@ -79,7 +80,7 @@
         android:id="@+id/btn_adminCrearDocente"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/spin_carreraCrearDocente"
+        android:layout_below="@id/etxt_contraseñaCrearDocente"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:text="Crear"

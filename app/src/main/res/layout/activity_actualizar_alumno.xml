@@ -41,43 +41,14 @@
         android:layout_below="@+id/etxt_registroActualizarAlumno"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:hint="Contraseña"/>
-    <Spinner
-        android:id="@+id/spin_CarreraActuaAlumno"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/etxt_contraseñaAcrualizarAlumno"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/edittext_form">
-    </Spinner>
+        android:hint="Nueva Contraseña"/>
 
-    <Spinner
-        android:id="@+id/spin_SemestreActuaAlumno"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spin_CarreraActuaAlumno"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:layout_alignLeft="@+id/spin_CarreraActuaAlumno"
-        android:background="@drawable/edittext_form">
-    </Spinner>
 
-    <Spinner
-        android:id="@+id/spin_GrupoActuaalumno"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/spin_CarreraActuaAlumno"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:layout_alignRight="@+id/spin_CarreraActuaAlumno"
-        android:background="@drawable/edittext_form">
-    </Spinner>
     <Button
         android:id="@+id/btn_ActulizarAlumnoAct"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/spin_GrupoActuaalumno"
+        android:layout_below="@id/etxt_contraseñaAcrualizarAlumno"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="Actualizar"

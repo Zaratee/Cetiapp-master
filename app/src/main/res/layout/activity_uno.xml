@@ -25,6 +25,33 @@
         android:drawablePadding="5dp"
         android:layout_marginTop="50dp"
         android:layout_below="@+id/imgV_logo"/>
+    <TextView
+        android:id="@+id/txtV_uno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/txtV_dos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/txtV_uno"/>
+
+    <TextView
+        android:id="@+id/txtV_tres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/txtV_dos"/>
+
+    <TextView
+        android:id="@+id/txtV_cuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/txtV_tres"/>
+
 
     <EditText
         android:id="@+id/etxt_liContraseñaAlumn"

@@ -40,22 +40,13 @@
         android:layout_below="@+id/etxt_nominaActualizarDocente"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:hint="Contraseña"/>
-    <Spinner
-        android:id="@+id/spin_carreraActualizarDocente"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/etxt_contraseñaActualizarDocente"
-        android:layout_marginTop="20dp"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edittext_form">
-    </Spinner>
+        android:hint=" Nueva Contraseña"/>
 
     <Button
         android:id="@+id/btn_ActualizarDocenteAct"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/spin_carreraActualizarDocente"
+        android:layout_below="@id/etxt_contraseñaActualizarDocente"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:text="Actualizar"

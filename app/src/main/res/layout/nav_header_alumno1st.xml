@@ -1,39 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
     android:background="@drawable/menufondo2"
-    android:gravity="bottom"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
         android:id="@+id/imgV_logoMenu"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:contentDescription="@string/nav_header_desc"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@drawable/logoceti1d" />
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/logoceti1d"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
 
     <TextView
         android:id="@+id/txtV_alumnoNombreMenu"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp"
         android:text="@string/Nombre"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="17dp"/>
+        android:textSize="17dp"
+        android:layout_below="@+id/imgV_logoMenu"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/imgV_logoMenu"/>
+    <TextView
+        android:id="@+id/txtV_alumnoApellidoPaMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ApellidoP"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="17dp"
+        android:layout_below="@+id/imgV_logoMenu"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/txtV_alumnoNombreMenu"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/txtV_alumnoApellidoMaMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ApellidoM"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="17dp"
+        android:layout_below="@+id/imgV_logoMenu"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/txtV_alumnoApellidoPaMenu"
+        android:layout_marginLeft="5dp"/>
+
 
     <TextView
         android:id="@+id/txtV_alumnoCarreraMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Carrera"
-        android:textSize="12dp"/>
+        android:textSize="12dp"
+        android:layout_below="@+id/txtV_alumnoNombreMenu"
+        android:layout_alignLeft="@+id/txtV_alumnoNombreMenu" />
 
-</LinearLayout>
+</RelativeLayout>

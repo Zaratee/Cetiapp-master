@@ -26,6 +26,12 @@ public class loginActDocent extends AppCompatActivity {
     String res;
     String res2;
     TextView prueba;
+    public static String Nombre = "Caros";
+    public static String ApelliM = "Caro";
+    public static String ApelliP = "Cargos";
+    public static String Regis = "Caroffs";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +40,6 @@ public class loginActDocent extends AppCompatActivity {
         login = (Button) findViewById(R.id.btn_ingresarDocente);
         nom = (EditText) findViewById(R.id.etxt_liUsuarioDoc);
         contr = (EditText) findViewById(R.id.etxt_liContraseñaDoc);
-        prueba =(TextView) findViewById(R.id.txtV_pruebadocente);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,12 +56,16 @@ public class loginActDocent extends AppCompatActivity {
                                     public void onResponse(JSONObject response) {
                                         try {
                                             String valor = response.getString("Estado");
-                                            String nombre = response.getString("nom");
-                                            prueba.setText(nombre);
+                                            String act = "DOS";
 
                                             switch(valor) {
 
                                                 case "OK":
+                                                    Nombre= response.getString("nom");
+                                                    ApelliM = response.getString("apellim");
+                                                    ApelliP = response.getString("apellip");
+                                                    Regis = response.getString("reg");
+                                                    MainActivity.ACT = act;
                                                     startActivity(iniciarDocente);
                                                     break;
                                                 case "NO":

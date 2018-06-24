@@ -12,10 +12,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class docente1stAct extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    TextView Nombr,ApellM,ApellP;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +59,14 @@ public class docente1stAct extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        Nombr = (TextView) findViewById(R.id.txtV_docenteNombreMenu);
+        ApellM = (TextView) findViewById(R.id.txtV_docenteApellidoMaMenu);
+        ApellP = (TextView) findViewById(R.id.txtV_docenteApellidoPaMenu) ;
+
+        Nombr.setText(loginActDocent.Nombre);
+        ApellM.setText(loginActDocent.ApelliM);
+        ApellP.setText(loginActDocent.ApelliP);
+
         getMenuInflater().inflate(R.menu.docente1st, menu);
         return true;
     }

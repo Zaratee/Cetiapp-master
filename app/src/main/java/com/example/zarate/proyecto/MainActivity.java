@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     Button alumno, docente, admin;
     TextView modDatos;
     Typeface quan;
+    public static String ACT = "csadasd";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
